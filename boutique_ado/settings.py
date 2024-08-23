@@ -166,7 +166,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CHECK THIS PROBABLY NEED TO CHANGE
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-juandavidc0-boutiqueado-jajiwn2u3dd.ws-eu115.gitpod.io',
+    'https://8000-juandavidc0-boutiqueado-xy0tp2o1ros.ws.codeinstitute-ide.net',
 ]
 
 FREE_DELIVERY_THRESHOLD = 50
