@@ -182,5 +182,10 @@ CSRF_TRUSTED_ORIGINS = [
     'https://8000-juandavidc0-boutiqueado-xy0tp2o1ros.ws.codeinstitute-ide.net',
 ]
 
+
+# Stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'usd'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
