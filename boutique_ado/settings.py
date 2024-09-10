@@ -24,10 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+#SECRET_KEY = os.environ.get('SECRET_KEY', ''django-insecure-9j#g2e3yxrv_yya*564!tfs(bllbb!3o7flfz55_ixmpn_h)br'')
+SECRET_KEY = 'django-insecure-9j#g2e3yxrv_yya*564!tfs(bllbb!3o7flfz55_ixmpn_h)br'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-juandavidc0-boutiqueado-xy0tp2o1ros.ws.codeinstitute-ide.net', 'boutiqueadov-37b6abb91879.herokuapp.com']
 
@@ -187,7 +189,7 @@ if 'USE_AWS' in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'ckz8780-boutique-ado'
     #verify this is not a problem
-    AWS_S3_REGION_NAME = 'eu-west-1'
+    AWS_S3_REGION_NAME = 'us-east-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
@@ -210,7 +212,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CHECK THIS PROBABLY NEED TO CHANGE
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-juandavidc0-boutiqueado-xy0tp2o1ros.ws.codeinstitute-ide.net',
+    'https://boutiqueadov-37b6abb91879.herokuapp.com',
 ]
+
 
 
 # Stripe
